@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import sklearn
+import scikit-learn
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
