@@ -1,10 +1,11 @@
 import streamlit as st
 import pandas as pd
+import sklearn
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 
-iris = pd.read_csv(r"C:\Users\Ashwini\Downloads\Iris.csv")
+iris = pd.read_csv(r"Iris.csv")
 
 st.write('''
 # Iris Flower Species Classifier
@@ -27,9 +28,9 @@ st.subheader("User Input Parameters")
 st.write(df)
 
 class_images = {
-    0: [r"C:\Users\Ashwini\Downloads\Iris_setosa.jpg", "Iris Setosa"],
-    1: [r"C:\Users\Ashwini\Downloads\Iris_versicolor_3.jpg", "Iris Versicolor"],
-    2: [r"C:\Users\Ashwini\Downloads\Iris_virginica.jpg", "Iris Verginica"]
+    0: [r"Iris_setosa.jpg", "Iris Setosa"],
+    1: [r"Iris_versicolor_3.jpg", "Iris Versicolor"],
+    2: [r"Iris_virginica.jpg", "Iris Verginica"]
 }
 
 
